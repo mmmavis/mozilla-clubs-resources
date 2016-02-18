@@ -33,7 +33,11 @@ module.exports = {
         test: /.jsx?$/,
         exclude: /node_modules/,
         loaders: ['babel', 'eslint']
-      }
+      },
+      {
+        test: /\.json$/,
+        loader: "json"
+      },
     ]
   },
   eslint: {

@@ -14,4 +14,4 @@ app.use(reactRouted);
 app.use(express.static(__dirname + '/public'));
 
 // make it happen.
-app.listen(PORT, () => console.log('Example app listening on port %d', PORT));
+app.listen(PORT, () => console.log('App listening on port %d', PORT));

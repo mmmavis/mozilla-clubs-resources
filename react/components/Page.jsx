@@ -1,6 +1,6 @@
 var React = require('react');
 var Link = require('react-router').Link;
-var Sidebar = require('./Sidebar.jsx');
+var Navbar = require('./Navbar.jsx');
 
 var elements = (function() {
   var randomstring = require('randomstring');
@@ -16,7 +16,7 @@ var Page = React.createClass({
 
   getDefaultProps() {
     return {
-      title: "Our Application"
+      title: "Mozilla Clubs Resources"
     };
   },
 
@@ -38,13 +38,17 @@ var Page = React.createClass({
     return (
       <div>
         <header>
-          <h1><Link to={'/'}>Page harness that acts as home link</Link></h1>
+          <div className="container">
+            <h1><Link to={'/'}>Mozilla Clubs Resources</Link></h1>
+          </div>
         </header>
         <div className="content">
-          <Sidebar/>
-          <section className="main">
-          { routedContent }
-          </section>
+          <div className="container">
+            <Navbar/>
+            <section className="main">
+            { routedContent }
+            </section>
+          </div>
         </div>
       </div>
     );

@@ -1,0 +1,69 @@
+@import './node_modules/foxlight/src/scss/foxlight.scss';
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  * {
+    box-sizing: border-box;
+  }
+}
+
+#app {
+  padding-bottom: 4rem;
+}
+
+.container {
+  max-width: 80rem;
+  margin: 0 auto;
+}
+
+header {
+  background: $maker-magenta;
+  padding: 6rem 0 4rem 0;
+  a {
+    &:link,
+    &:visited {
+      color: $white;
+      font-size: 3.8rem;
+    }
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+h2 {
+  color: $maker-magenta;
+  border-bottom: 1px solid $maker-magenta;
+  padding-bottom: 1rem;
+  margin: 4rem 0 2rem 0;
+}
+
+.navbar {
+  margin-bottom: 2rem;
+  li {
+    display: inline-block;
+    list-style: none;
+    padding: 1rem;
+    margin-right: 2rem;
+  }
+}
+
+.homepage {
+  .important-link {
+    display: inline-block;
+    color: $maker-magenta;
+    width: 32%;
+    padding: 2rem;
+    margin: 0;
+    background: pink;
+    &:hover {
+      color: $white;
+      text-decoration: none;
+      background: $maker-magenta;
+    }
+  }
+}
